@@ -1,179 +1,99 @@
-html {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
-}
-
 main {
-  text-align: center;
+  margin: 3% auto;
+  width: 480px;
+  font-size: 1.5rem;
+  outline: gray 1px solid;
+}
+
+header {
+  height: 75px;
+  line-height: 75px;
+  background: #CCC;
   position: relative;
-  width: 90%;
-  height: 90%;
-  margin: 5%;
-  padding: 0%;
+  outline: gray 1px solid;
 }
 
-body {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
-}
-
-h1 {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  font-size: 1em;
-  margin: 0px;
-  padding: 0%;
-}
-
-div {
+section {
+  height: 150px;
+  line-height: 150px;
+  background: #CCC;
   position: relative;
-  padding: 0%;
-  margin: -3px;
-  background: grey;
-  border: solid black 1px;
+  outline: gray 1px solid;
+}
+
+article {
+  height: 125px;
+  line-height: 125px;
+  background: #CCC;
+  position: relative;
+  outline: gray 1px solid;
+}
+
+aside {
   display: inline-block;
-}
-
-
-.a {
-  min-width: 90vw;
-  min-height: calc(90vw / 6.4);
-}
-
-.b {
-  min-width: 90vw;
-  min-height: calc(90vw / 3.2);
-}
-
-.c {
-  min-width: 90vw;
-  min-height: calc(90vw / 3.84);
-}
-
-.d {
-  min-width: 90vw;
-  min-height: calc(90vw / 3.84);
-}
-
-.e {
-  min-width: 45vw;
-  min-height: calc(90vw / 1.92);
-}
-
-.f {
+  width: 240px;
+  height: 250px;
+  line-height: 250px;
+  background: #CCC;
   margin-left: -3px;
-  min-width: 45vw;
-  min-height: calc(90vw / 1.92);
+  margin-right: -3px;
+  position: relative;
+  outline: gray 1px solid;
 }
 
-.g {
-  min-width: 45vw;
-  min-height: calc(90vw / 1.92);
+footer {
+  height: 80px;
+  line-height: 80px;
+  background: #CCC;
+  outline: gray 1px solid;
+  margin-top: -5px;
 }
 
-.h {
-  margin-left: -3px;
-  min-width: 45vw;
-  min-height: calc(90vw / 1.92);
+.letter {
+  font-size: 1.1rem;
+  display: inline-block;
+  line-height: 16px;
+  position: absolute;
+  left: 20px;
 }
 
-.i {
-  min-width: 90vw;
-  min-height: calc(90vw / 6);
-}
-
-@media screen and (min-width: 800px) {
+@media screen and ( min-width: 960px ) {
   main {
     width: 960px;
   }
-  .a {
-    top: 0px;
-    left: 0px;
-    position: absolute;
-    min-width: 90vw;
-    min-height: calc(90vw / 9.6);
-    max-width: 100%;
+
+  header {
+    height: 100px;
+    line-height: 100px;
   }
 
-  .b {
-    left: 0px;
-    top: calc(90vw / 9.6);
-    position: absolute;
-    min-width: calc(90vw / 4.8);
-    min-height: calc(90vw / 1.6);
-    max-width: 100%;
+  section {
+    float: left;
+    width: 200px;
+    height: 600px;
+    line-height: 600px;
   }
 
-  .c {
-    top: calc(90vw / 9.6);
-    left: calc(90vw / 4.8);
-    position: absolute;
-    min-width: calc(90vw / (960 / 380));
-    min-height: calc(90vw / 4.8);
-    max-width: 100%;
+  article {
+    float: right;
+    width: 380px;
+    height: 200px;
+    line-height: 200px;
   }
 
-  .d {
-    top: calc(90vw / 9.6);
-    left: calc(90vw / (960 / 580));
-    position: absolute;
-    min-width: calc(90vw / (960 / 380));
-    min-height: calc(90vw / 4.8);
-    max-width: 100%;
+  aside {
+    float: right;
+    width: 190px;
+    height: 250px;
+    line-height: 250px;
+    margin: 0;
   }
 
-  .e {
-    top: calc(90vw / 3.2);
-    left: calc(90vw / (960 / 200));
-    position: absolute;
-    min-width: calc(90vw / (960 / 190));
-    min-height: calc(90vw / 3.84);
-    max-width: 100%;
-  }
-
-  .f {
-    margin-left: -5px;
-    top: calc(90vw / 3.2);
-    left: calc(90vw / (960 / 393));
-    position: absolute;
-    min-width: calc(90vw / (960 / 190));
-    min-height: calc(90vw / 3.84);
-    max-width: 100%;
-  }
-
-  .g {
-    top: calc(90vw / 3.2);
-    left: calc(90vw / (960 / 580));
-    position: absolute;
-    min-width: calc(90vw / (960 / 190));
-    min-height: calc(90vw / 3.84);
-    max-width: 100%;
-  }
-
-  .h {
-    margin-left: -7px;
-    top: calc(90vw / 3.2);
-    left: calc(90vw / (960 / 774));
-    position: absolute;
-    min-width: calc(90vw / (960 / 190));
-    min-height: calc(90vw / 3.84);
-    max-width: 100%;
-  }
-
-  .i {
-    top: calc(90vw / (960 / 550));
-    left: calc(90vw / (960 / 200));
-    position: absolute;
-    min-width: calc(90vw / (960 / 760));
-    min-height: calc(90vw / 6.4);
-    max-width: 100%;
+  footer {
+    float: right;
+    width: 760px;
+    height: 150px;
+    line-height: 150px;
+    margin: 0;
   }
 }
